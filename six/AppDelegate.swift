@@ -11,8 +11,13 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
+    let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(NSVariableStatusItemLength)
+
     func applicationDidFinishLaunching(aNotification: NSNotification) {
- 
+        if let button = statusItem.button {
+            button.image = NSImage(named: "six")
+            button.action = Selector("showMenu:")
+        }
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
