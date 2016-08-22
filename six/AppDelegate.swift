@@ -15,13 +15,17 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         if let button = statusItem.button {
-            button.image = NSImage(named: "six")
+            button.image = NSImage(named: "iconsix")
             button.action = Selector("showMenu:")
         }
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
         
+    }
+    
+    func showMenu(sender: NSStatusBarButton) {
+        print("Menu is open")
     }
 
 
