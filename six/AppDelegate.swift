@@ -38,10 +38,9 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
   }
 
   func setupEventMonitor() {
-    eventMonitor = EventMonitor(mask: [.KeyDownMask]) { event in
+    eventMonitor = EventMonitor(mask: [.LeftMouseDownMask, .RightMouseDownMask, .KeyDownMask]) { event in
       print(event)
     }
-
     eventMonitor?.start()
   }
 
