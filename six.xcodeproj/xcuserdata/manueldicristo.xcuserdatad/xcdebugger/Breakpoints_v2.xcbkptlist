@@ -10,12 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "six/AppDelegate.swift"
-            timestampString = "493663099.907157"
+            timestampString = "493670838.143794"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "14"
-            endingLineNumber = "14"
-            landmarkName = "applicationDidFinishLaunching(_:)"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "quit(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -26,12 +26,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "six/AppDelegate.swift"
-            timestampString = "493667566.744318"
+            timestampString = "493670838.143794"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
-            landmarkName = "setupEventMonitor()"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "quit(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -42,29 +42,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "six/AppDelegate.swift"
-            timestampString = "493668482.902427"
+            timestampString = "493670838.143794"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
-            landmarkName = "setupEventMonitor()"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "quit(_:)"
             landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "six/AppDelegate.swift"
-            timestampString = "493667566.744318"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
-            landmarkName = "AppDelegate"
-            landmarkType = "3">
             <Locations>
                <Location
                   shouldBeEnabled = "No"
@@ -106,12 +90,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "six/AppDelegate.swift"
-            timestampString = "493668377.833792"
+            timestampString = "493670838.143794"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
-            landmarkName = "setupEventMonitor()"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "setupButton()"
             landmarkType = "5">
             <Locations>
                <Location
@@ -145,6 +129,22 @@
                   offsetFromSymbolStart = "163">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EventMonitor.swift"
+            timestampString = "493670742.842989"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "6"
+            endingLineNumber = "6"
+            landmarkName = "EventMonitor"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

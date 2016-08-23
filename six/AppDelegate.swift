@@ -7,8 +7,21 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
   let menu = NSMenu()
   var eventMonitor: EventMonitor?
 
+//  func function001()  {
+//    let anApplication = NSApplication.sharedApplication()
+//    print("Shared Application Object: \(anApplication).")
+//  }
+//  
+//  func function002()  {
+//    let anApplication = NSApplication.sharedApplication()
+//    let obj = anApplication.delegate
+//    print("Delegate Object: \(obj).")
+//  }
+
   func applicationDidFinishLaunching(aNotification: NSNotification) {
     NSUserNotificationCenter.defaultUserNotificationCenter().delegate = self
+//    function001()
+//    function002()
     setupButton()
     buildMenu()
     setupEventMonitor()
