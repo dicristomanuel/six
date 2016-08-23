@@ -18,16 +18,19 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     if let button = statusItem.button {
       button.image = NSImage(named: "iconsix")
     }
-    
+
     menu.addItem(NSMenuItem(title: "Six", action: #selector(AppDelegate.showMenu(_:)), keyEquivalent: "S"))
     menu.addItem(NSMenuItem.separatorItem())
     menu.addItem(NSMenuItem(title: "Quit", action: #selector(AppDelegate.quit(_:)), keyEquivalent: "q"))
 
     statusItem.menu = menu
+    let NSKeyDownMask: NSEventMask
 
-    func keyDown(theEvent: NSEvent) {
-      print(theEvent.keyCode)
-    }
+   func applicationDidFinishLaunching(aNotification: NSNotification) {
+     NSEvent.addGlobalMonitorForEventsMatchingMask(NSKeyDownMask, handler: {(e: NSEvent) -> Void in
+       print("\(e)")
+     })
+   }
   }
 
   func applicationWillTerminate(aNotification: NSNotification) {}
