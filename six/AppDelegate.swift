@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  six
-//
-//  Created by Manuel Di Cristo on 8/22/16.
-//  Copyright © 2016 six. All rights reserved.
-//
-
 import Cocoa
 
 @NSApplicationMain
@@ -22,13 +14,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     menu.addItem(NSMenuItem(title: "Six", action: #selector(AppDelegate.showMenu(_:)), keyEquivalent: "S"))
     menu.addItem(NSMenuItem.separatorItem())
     menu.addItem(NSMenuItem(title: "Quit", action: #selector(AppDelegate.quit(_:)), keyEquivalent: "q"))
-
     statusItem.menu = menu
+
     let NSKeyDownMask: NSEventMask
 
-    NSEvent.addGlobalMonitorForEventsMatchingMask(NSKeyDownMask, handler: {(e: NSEvent) -> Void in
-      print("\(e)")
+    NSEvent.addGlobalMonitorForEventsMatchingMask(NSKeyDownMask, handler: {(event: NSEvent) -> Void in
+      print("\(event)")
     })
+
   }
 
   func applicationWillTerminate(aNotification: NSNotification) {}
