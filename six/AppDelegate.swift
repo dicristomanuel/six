@@ -9,16 +9,8 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
 
   func applicationDidFinishLaunching(aNotification: NSNotification) {
     NSUserNotificationCenter.defaultUserNotificationCenter().delegate = self
-
-    if let button = statusItem.button {
-      button.image = NSImage(named: "iconsix")
-    }
-
-    menu.addItem(NSMenuItem(title: "Six", action: #selector(AppDelegate.showMenu(_:)), keyEquivalent: "S"))
-    menu.addItem(NSMenuItem.separatorItem())
-    menu.addItem(NSMenuItem(title: "Quit", action: #selector(AppDelegate.quit(_:)), keyEquivalent: "q"))
-    statusItem.menu = menu
-
+    setupButton()
+    buildMenu()
     setupEventMonitor()
   }
 
@@ -30,6 +22,19 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
 
   func quit(send: AnyObject?) {
     NSApplication.sharedApplication().terminate(nil)
+  }
+
+  func setupButton() {
+    if let button = statusItem.button {
+      button.image = NSImage(named: "iconsix")
+    }
+  }
+
+  func buildMenu() {
+    menu.addItem(NSMenuItem(title: "Six", action: #selector(AppDelegate.showMenu(_:)), keyEquivalent: "S"))
+    menu.addItem(NSMenuItem.separatorItem())
+    menu.addItem(NSMenuItem(title: "Quit", action: #selector(AppDelegate.quit(_:)), keyEquivalent: "q"))
+    statusItem.menu = menu
   }
 
   func setupEventMonitor() {
