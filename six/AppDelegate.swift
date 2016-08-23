@@ -26,11 +26,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     statusItem.menu = menu
     let NSKeyDownMask: NSEventMask
 
-   func applicationDidFinishLaunching(aNotification: NSNotification) {
-     NSEvent.addGlobalMonitorForEventsMatchingMask(NSKeyDownMask, handler: {(e: NSEvent) -> Void in
-       print("\(e)")
-     })
-   }
+    NSEvent.addGlobalMonitorForEventsMatchingMask(NSKeyDownMask, handler: {(e: NSEvent) -> Void in
+      print("\(e)")
+    })
   }
 
   func applicationWillTerminate(aNotification: NSNotification) {}
