@@ -1,12 +1,15 @@
 import Cocoa
 
 @NSApplicationMain
-class AppDelegate: NSObject, NSApplicationDelegate {
+class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDelegate {
 
   let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(NSVariableStatusItemLength)
   let menu = NSMenu()
+  var eventMonitor: EventMonitor?
 
   func applicationDidFinishLaunching(aNotification: NSNotification) {
+    NSUserNotificationCenter.defaultUserNotificationCenter().delegate = self
+
     if let button = statusItem.button {
       button.image = NSImage(named: "iconsix")
     }
@@ -16,12 +19,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     menu.addItem(NSMenuItem(title: "Quit", action: #selector(AppDelegate.quit(_:)), keyEquivalent: "q"))
     statusItem.menu = menu
 
-    let NSKeyDownMask: NSEventMask
-
-    NSEvent.addGlobalMonitorForEventsMatchingMask(NSKeyDownMask, handler: {(event: NSEvent) -> Void in
-      print("\(event)")
-    })
-
+    setupEventMonitor()
   }
 
   func applicationWillTerminate(aNotification: NSNotification) {}
@@ -32,6 +30,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
   func quit(send: AnyObject?) {
     NSApplication.sharedApplication().terminate(nil)
+  }
+
+  func setupEventMonitor() {
+    eventMonitor = EventMonitor(mask: [.KeyDownMask]) { event in
+      print(event)
+    }
+
+    eventMonitor?.start()
   }
 
 }
