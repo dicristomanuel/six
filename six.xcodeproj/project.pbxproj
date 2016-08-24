@@ -17,6 +17,10 @@
 		C07D7F731D6E143B0056CBAC /* BLEPeripheralConnectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07D7F701D6E143B0056CBAC /* BLEPeripheralConnectivity.swift */; };
 		C07D7F741D6E143B0056CBAC /* CBMutableService+BLEEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07D7F711D6E143B0056CBAC /* CBMutableService+BLEEngine.swift */; };
 		C07D7F751D6E143B0056CBAC /* PeripheralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07D7F721D6E143B0056CBAC /* PeripheralViewController.swift */; };
+		C07D7F7C1D6E14D00056CBAC /* BLEPeripheralOSXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07D7F761D6E14D00056CBAC /* BLEPeripheralOSXTests.swift */; };
+		C07D7F7D1D6E14D00056CBAC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C07D7F771D6E14D00056CBAC /* Info.plist */; };
+		C07D7F7E1D6E14D00056CBAC /* BLEPeripheralOSXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07D7F791D6E14D00056CBAC /* BLEPeripheralOSXUITests.swift */; };
+		C07D7F7F1D6E14D00056CBAC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C07D7F7A1D6E14D00056CBAC /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,10 @@
 		C07D7F701D6E143B0056CBAC /* BLEPeripheralConnectivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BLEPeripheralConnectivity.swift; path = ../../BLEPlayground/BLEPeripheralOSX/BLEPeripheralOSX/BLEPeripheralConnectivity.swift; sourceTree = "<group>"; };
 		C07D7F711D6E143B0056CBAC /* CBMutableService+BLEEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CBMutableService+BLEEngine.swift"; path = "../../BLEPlayground/BLEPeripheralOSX/BLEPeripheralOSX/CBMutableService+BLEEngine.swift"; sourceTree = "<group>"; };
 		C07D7F721D6E143B0056CBAC /* PeripheralViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PeripheralViewController.swift; path = ../../BLEPlayground/BLEPeripheralOSX/BLEPeripheralOSX/PeripheralViewController.swift; sourceTree = "<group>"; };
+		C07D7F761D6E14D00056CBAC /* BLEPeripheralOSXTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLEPeripheralOSXTests.swift; sourceTree = "<group>"; };
+		C07D7F771D6E14D00056CBAC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C07D7F791D6E14D00056CBAC /* BLEPeripheralOSXUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLEPeripheralOSXUITests.swift; sourceTree = "<group>"; };
+		C07D7F7A1D6E14D00056CBAC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +95,8 @@
 				C01EEB911D6B871900BB1F51 /* sixTests */,
 				C01EEB9C1D6B871900BB1F51 /* sixUITests */,
 				C01EEB7E1D6B871900BB1F51 /* Products */,
+				C07D7F781D6E14D00056CBAC /* BLEPeripheralOSXTests */,
+				C07D7F7B1D6E14D00056CBAC /* BLEPeripheralOSXUITests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +142,26 @@
 				C01EEB9F1D6B871900BB1F51 /* Info.plist */,
 			);
 			path = sixUITests;
+			sourceTree = "<group>";
+		};
+		C07D7F781D6E14D00056CBAC /* BLEPeripheralOSXTests */ = {
+			isa = PBXGroup;
+			children = (
+				C07D7F761D6E14D00056CBAC /* BLEPeripheralOSXTests.swift */,
+				C07D7F771D6E14D00056CBAC /* Info.plist */,
+			);
+			name = BLEPeripheralOSXTests;
+			path = ../BLEPlayground/BLEPeripheralOSX/BLEPeripheralOSXTests;
+			sourceTree = "<group>";
+		};
+		C07D7F7B1D6E14D00056CBAC /* BLEPeripheralOSXUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C07D7F791D6E14D00056CBAC /* BLEPeripheralOSXUITests.swift */,
+				C07D7F7A1D6E14D00056CBAC /* Info.plist */,
+			);
+			name = BLEPeripheralOSXUITests;
+			path = ../BLEPlayground/BLEPeripheralOSX/BLEPeripheralOSXUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,8 +268,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C07D7F7F1D6E14D00056CBAC /* Info.plist in Resources */,
 				C01EEB851D6B871900BB1F51 /* Assets.xcassets in Resources */,
 				C01EEB881D6B871900BB1F51 /* Main.storyboard in Resources */,
+				C07D7F7D1D6E14D00056CBAC /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,10 +298,12 @@
 			files = (
 				C07D7F731D6E143B0056CBAC /* BLEPeripheralConnectivity.swift in Sources */,
 				C07D7F741D6E143B0056CBAC /* CBMutableService+BLEEngine.swift in Sources */,
+				C07D7F7E1D6E14D00056CBAC /* BLEPeripheralOSXUITests.swift in Sources */,
 				C01EEBB21D6CDE4500BB1F51 /* EventMonitor.swift in Sources */,
 				C01EEB831D6B871900BB1F51 /* ViewController.swift in Sources */,
 				C07D7F751D6E143B0056CBAC /* PeripheralViewController.swift in Sources */,
 				C01EEB811D6B871900BB1F51 /* AppDelegate.swift in Sources */,
+				C07D7F7C1D6E14D00056CBAC /* BLEPeripheralOSXTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
