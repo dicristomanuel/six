@@ -6,13 +6,15 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
 
   let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(NSVariableStatusItemLength)
   let menu = NSMenu()
-  var eventMonitor: EventMonitor?
+  var eventMonitor: EventMonitor? = nil
+  var ble: PeripheralWindowController? = nil
 
   func applicationDidFinishLaunching(aNotification: NSNotification) {
     NSUserNotificationCenter.defaultUserNotificationCenter().delegate = self
     setupButton()
     buildMenu()
     setupEventMonitor()
+    startBluetooth()
   }
 
   func applicationWillTerminate(aNotification: NSNotification) {}
@@ -44,4 +46,8 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
     }
     eventMonitor?.start()
   }
+    
+    func startBluetooth() {
+        ble?.toPrint()
+    }
 }
