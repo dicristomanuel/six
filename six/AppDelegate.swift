@@ -1,4 +1,5 @@
 import Cocoa
+import CoreBluetooth
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDelegate {
