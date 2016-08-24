@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "C5632128FB9E7B143547A39BA3092405564261BA",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "B9C2565D987B7F90F967509AB5FCBCCDEC43163E" : 0,
+    "C5632128FB9E7B143547A39BA3092405564261BA" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "4A30932B-961C-4F09-950C-D6CBF3D2507C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "B9C2565D987B7F90F967509AB5FCBCCDEC43163E" : "BLEPlayground\/",
+    "C5632128FB9E7B143547A39BA3092405564261BA" : "six\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "six",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "six.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:killobatt\/BLEPlayground.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B9C2565D987B7F90F967509AB5FCBCCDEC43163E"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:dicristomanuel\/six.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C5632128FB9E7B143547A39BA3092405564261BA"
+    }
+  ]
+}
