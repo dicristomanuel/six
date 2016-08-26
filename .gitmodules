@@ -1,0 +1,3 @@
+[submodule "ChannelZ"]
+	path = ChannelZ
+	url = https://github.com/glimpseio/ChannelZ.git
