@@ -14,11 +14,15 @@
 		C01EEB931D6B871900BB1F51 /* sixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01EEB921D6B871900BB1F51 /* sixTests.swift */; };
 		C01EEB9E1D6B871900BB1F51 /* sixUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01EEB9D1D6B871900BB1F51 /* sixUITests.swift */; };
 		C01EEBB21D6CDE4500BB1F51 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01EEBB11D6CDE4500BB1F51 /* EventMonitor.swift */; };
+		C074BE371D7345A50009002B /* DeviceTypes.plist in Resources */ = {isa = PBXBuildFile; fileRef = C074BE341D7345A50009002B /* DeviceTypes.plist */; };
+		C074BE381D7345A50009002B /* HIDService.plist in Resources */ = {isa = PBXBuildFile; fileRef = C074BE351D7345A50009002B /* HIDService.plist */; };
+		C074BE391D7345A50009002B /* PnPInformationService.plist in Resources */ = {isa = PBXBuildFile; fileRef = C074BE361D7345A50009002B /* PnPInformationService.plist */; };
 		C07D7F731D6E143B0056CBAC /* BLEPeripheralConnectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07D7F701D6E143B0056CBAC /* BLEPeripheralConnectivity.swift */; };
 		C07D7F741D6E143B0056CBAC /* CBMutableService+BLEEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07D7F711D6E143B0056CBAC /* CBMutableService+BLEEngine.swift */; };
 		C07D7F751D6E143B0056CBAC /* PeripheralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07D7F721D6E143B0056CBAC /* PeripheralViewController.swift */; };
-		C07D7FBA1D7087F00056CBAC /* HidManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07D7FB91D7087F00056CBAC /* HidManager.swift */; };
-		C07D7FCE1D708AE10056CBAC /* ChannelZ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C07D7FCB1D708AD00056CBAC /* ChannelZ.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		C0C528CD1D73451E00522456 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0C528CC1D73451E00522456 /* CoreBluetooth.framework */; };
+		C0C528D01D73452600522456 /* IOBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0C528CE1D73452600522456 /* IOBluetooth.framework */; };
+		C0C528D11D73452600522456 /* IOBluetoothUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0C528CF1D73452600522456 /* IOBluetoothUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,20 +40,6 @@
 			remoteGlobalIDString = C01EEB7C1D6B871900BB1F51;
 			remoteInfo = six;
 		};
-		C07D7FCA1D708AD00056CBAC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C07D7FC51D708AD00056CBAC /* ChannelZ.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 7E30DC301A0D6A510050EC52;
-			remoteInfo = ChannelZ;
-		};
-		C07D7FCC1D708AD00056CBAC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C07D7FC51D708AD00056CBAC /* ChannelZ.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 7E30DC3B1A0D6A510050EC52;
-			remoteInfo = ChannelZTests;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -66,11 +56,15 @@
 		C01EEB9D1D6B871900BB1F51 /* sixUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sixUITests.swift; sourceTree = "<group>"; };
 		C01EEB9F1D6B871900BB1F51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C01EEBB11D6CDE4500BB1F51 /* EventMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
+		C074BE341D7345A50009002B /* DeviceTypes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DeviceTypes.plist; sourceTree = "<group>"; };
+		C074BE351D7345A50009002B /* HIDService.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HIDService.plist; sourceTree = "<group>"; };
+		C074BE361D7345A50009002B /* PnPInformationService.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PnPInformationService.plist; sourceTree = "<group>"; };
 		C07D7F701D6E143B0056CBAC /* BLEPeripheralConnectivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BLEPeripheralConnectivity.swift; path = ../../BLEPlayground/BLEPeripheralOSX/BLEPeripheralOSX/BLEPeripheralConnectivity.swift; sourceTree = "<group>"; };
 		C07D7F711D6E143B0056CBAC /* CBMutableService+BLEEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CBMutableService+BLEEngine.swift"; path = "../../BLEPlayground/BLEPeripheralOSX/BLEPeripheralOSX/CBMutableService+BLEEngine.swift"; sourceTree = "<group>"; };
 		C07D7F721D6E143B0056CBAC /* PeripheralViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PeripheralViewController.swift; path = ../../BLEPlayground/BLEPeripheralOSX/BLEPeripheralOSX/PeripheralViewController.swift; sourceTree = "<group>"; };
-		C07D7FB91D7087F00056CBAC /* HidManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HidManager.swift; sourceTree = "<group>"; };
-		C07D7FC51D708AD00056CBAC /* ChannelZ.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ChannelZ.xcodeproj; path = ChannelZ/ChannelZ.xcodeproj; sourceTree = SOURCE_ROOT; };
+		C0C528CC1D73451E00522456 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		C0C528CE1D73452600522456 /* IOBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOBluetooth.framework; path = System/Library/Frameworks/IOBluetooth.framework; sourceTree = SDKROOT; };
+		C0C528CF1D73452600522456 /* IOBluetoothUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOBluetoothUI.framework; path = System/Library/Frameworks/IOBluetoothUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +72,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C07D7FCE1D708AE10056CBAC /* ChannelZ.framework in Frameworks */,
+				C0C528D01D73452600522456 /* IOBluetooth.framework in Frameworks */,
+				C0C528D11D73452600522456 /* IOBluetoothUI.framework in Frameworks */,
+				C0C528CD1D73451E00522456 /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +98,9 @@
 		C01EEB741D6B871900BB1F51 = {
 			isa = PBXGroup;
 			children = (
+				C0C528CE1D73452600522456 /* IOBluetooth.framework */,
+				C0C528CF1D73452600522456 /* IOBluetoothUI.framework */,
+				C0C528CC1D73451E00522456 /* CoreBluetooth.framework */,
 				C01EEB7F1D6B871900BB1F51 /* six */,
 				C01EEB911D6B871900BB1F51 /* sixTests */,
 				C01EEB9C1D6B871900BB1F51 /* sixUITests */,
@@ -122,7 +121,6 @@
 		C01EEB7F1D6B871900BB1F51 /* six */ = {
 			isa = PBXGroup;
 			children = (
-				C07D7FC51D708AD00056CBAC /* ChannelZ.xcodeproj */,
 				C07D7F701D6E143B0056CBAC /* BLEPeripheralConnectivity.swift */,
 				C07D7F711D6E143B0056CBAC /* CBMutableService+BLEEngine.swift */,
 				C07D7F721D6E143B0056CBAC /* PeripheralViewController.swift */,
@@ -132,7 +130,9 @@
 				C01EEB861D6B871900BB1F51 /* Main.storyboard */,
 				C01EEB891D6B871900BB1F51 /* Info.plist */,
 				C01EEBB11D6CDE4500BB1F51 /* EventMonitor.swift */,
-				C07D7FB91D7087F00056CBAC /* HidManager.swift */,
+				C074BE341D7345A50009002B /* DeviceTypes.plist */,
+				C074BE351D7345A50009002B /* HIDService.plist */,
+				C074BE361D7345A50009002B /* PnPInformationService.plist */,
 			);
 			path = six;
 			sourceTree = "<group>";
@@ -153,15 +153,6 @@
 				C01EEB9F1D6B871900BB1F51 /* Info.plist */,
 			);
 			path = sixUITests;
-			sourceTree = "<group>";
-		};
-		C07D7FC61D708AD00056CBAC /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C07D7FCB1D708AD00056CBAC /* ChannelZ.framework */,
-				C07D7FCD1D708AD00056CBAC /* ChannelZTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,12 +245,6 @@
 			mainGroup = C01EEB741D6B871900BB1F51;
 			productRefGroup = C01EEB7E1D6B871900BB1F51 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = C07D7FC61D708AD00056CBAC /* Products */;
-					ProjectRef = C07D7FC51D708AD00056CBAC /* ChannelZ.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				C01EEB7C1D6B871900BB1F51 /* six */,
@@ -269,30 +254,16 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		C07D7FCB1D708AD00056CBAC /* ChannelZ.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = ChannelZ.framework;
-			remoteRef = C07D7FCA1D708AD00056CBAC /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		C07D7FCD1D708AD00056CBAC /* ChannelZTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = ChannelZTests.xctest;
-			remoteRef = C07D7FCC1D708AD00056CBAC /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXResourcesBuildPhase section */
 		C01EEB7B1D6B871900BB1F51 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C074BE391D7345A50009002B /* PnPInformationService.plist in Resources */,
+				C074BE381D7345A50009002B /* HIDService.plist in Resources */,
 				C01EEB851D6B871900BB1F51 /* Assets.xcassets in Resources */,
 				C01EEB881D6B871900BB1F51 /* Main.storyboard in Resources */,
+				C074BE371D7345A50009002B /* DeviceTypes.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,7 +290,6 @@
 			files = (
 				C07D7F731D6E143B0056CBAC /* BLEPeripheralConnectivity.swift in Sources */,
 				C07D7F741D6E143B0056CBAC /* CBMutableService+BLEEngine.swift in Sources */,
-				C07D7FBA1D7087F00056CBAC /* HidManager.swift in Sources */,
 				C01EEBB21D6CDE4500BB1F51 /* EventMonitor.swift in Sources */,
 				C01EEB831D6B871900BB1F51 /* ViewController.swift in Sources */,
 				C07D7F751D6E143B0056CBAC /* PeripheralViewController.swift in Sources */,

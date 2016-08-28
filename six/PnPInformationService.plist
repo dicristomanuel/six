@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>0000 - ServiceRecordHandle</key>
+	<integer>65579</integer>
+	<key>0001 - ServiceClassIDList (PnPInformation)</key>
+	<array>
+		<data>EgA=</data>
+	</array>
+	<key>0004 - ProtocolDescriptionList {{L2CAP, PSM}. {?}}</key>
+	<array>
+		<array>
+			<data>AQA=</data>
+			<dict>
+				<key>DataElementType</key>
+				<integer>1</integer>
+				<key>DataElementValue</key>
+				<data>AAE=</data>
+			</dict>
+		</array>
+		<array>
+			<data>AAE=</data>
+		</array>
+	</array>
+	<key>0009 - BluetoothProfileDescriptorList (PnP, versionNum)</key>
+	<array>
+		<array>
+			<data>EgA=</data>
+			<dict>
+				<key>DataElementType</key>
+				<integer>1</integer>
+				<key>DataElementValue</key>
+				<data>AQA=</data>
+			</dict>
+		</array>
+	</array>
+	<key>0200 - HIDDeviceReleaseNumber</key>
+	<dict>
+		<key>DataElementType</key>
+		<integer>1</integer>
+		<key>DataElementValue</key>
+		<data>AQA=</data>
+	</dict>
+	<key>0201 - HIDParserVersion</key>
+	<dict>
+		<key>DataElementType</key>
+		<integer>1</integer>
+		<key>DataElementValue</key>
+		<data>Baw=</data>
+	</dict>
+	<key>0202 - HIDDeviceSubclass (Keyboard)</key>
+	<dict>
+		<key>DataElementType</key>
+		<integer>1</integer>
+		<key>DataElementValue</key>
+		<data>Ai0=</data>
+	</dict>
+	<key>0203 - HIDCountryCode ( ??)</key>
+	<dict>
+		<key>DataElementType</key>
+		<integer>1</integer>
+		<key>DataElementValue</key>
+		<data>AUE=</data>
+	</dict>
+	<key>0204 - HIDVirtualCable (Yes)</key>
+	<true/>
+	<key>0205 - unknown</key>
+	<dict>
+		<key>DataElementType</key>
+		<integer>1</integer>
+		<key>DataElementValue</key>
+		<data>AAI=</data>
+	</dict>
+</dict>
+</plist>
