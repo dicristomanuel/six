@@ -7,7 +7,8 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
   let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(NSVariableStatusItemLength)
   let menu = NSMenu()
   var eventMonitor: EventMonitor? = nil
-  var ble = PeripheralWindowController()
+//  var ble = PeripheralWindowController()
+  var ble = BLEService()
 
   func applicationDidFinishLaunching(aNotification: NSNotification) {
     NSUserNotificationCenter.defaultUserNotificationCenter().delegate = self

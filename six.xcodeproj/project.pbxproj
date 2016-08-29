@@ -14,6 +14,9 @@
 		C01EEB931D6B871900BB1F51 /* sixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01EEB921D6B871900BB1F51 /* sixTests.swift */; };
 		C01EEB9E1D6B871900BB1F51 /* sixUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01EEB9D1D6B871900BB1F51 /* sixUITests.swift */; };
 		C01EEBB21D6CDE4500BB1F51 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01EEBB11D6CDE4500BB1F51 /* EventMonitor.swift */; };
+		C02B653D1D739FDA002F823F /* HIDKeyboardService.plist in Resources */ = {isa = PBXBuildFile; fileRef = C02B653C1D739FDA002F823F /* HIDKeyboardService.plist */; };
+		C02B653F1D73A076002F823F /* BT.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02B653E1D73A076002F823F /* BT.swift */; };
+		C02B65411D73A15F002F823F /* BLEService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02B65401D73A15F002F823F /* BLEService.swift */; };
 		C074BE371D7345A50009002B /* DeviceTypes.plist in Resources */ = {isa = PBXBuildFile; fileRef = C074BE341D7345A50009002B /* DeviceTypes.plist */; };
 		C074BE381D7345A50009002B /* HIDService.plist in Resources */ = {isa = PBXBuildFile; fileRef = C074BE351D7345A50009002B /* HIDService.plist */; };
 		C074BE391D7345A50009002B /* PnPInformationService.plist in Resources */ = {isa = PBXBuildFile; fileRef = C074BE361D7345A50009002B /* PnPInformationService.plist */; };
@@ -56,6 +59,9 @@
 		C01EEB9D1D6B871900BB1F51 /* sixUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sixUITests.swift; sourceTree = "<group>"; };
 		C01EEB9F1D6B871900BB1F51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C01EEBB11D6CDE4500BB1F51 /* EventMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
+		C02B653C1D739FDA002F823F /* HIDKeyboardService.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HIDKeyboardService.plist; sourceTree = "<group>"; };
+		C02B653E1D73A076002F823F /* BT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BT.swift; sourceTree = "<group>"; };
+		C02B65401D73A15F002F823F /* BLEService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLEService.swift; sourceTree = "<group>"; };
 		C074BE341D7345A50009002B /* DeviceTypes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DeviceTypes.plist; sourceTree = "<group>"; };
 		C074BE351D7345A50009002B /* HIDService.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HIDService.plist; sourceTree = "<group>"; };
 		C074BE361D7345A50009002B /* PnPInformationService.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PnPInformationService.plist; sourceTree = "<group>"; };
@@ -126,13 +132,16 @@
 				C07D7F721D6E143B0056CBAC /* PeripheralViewController.swift */,
 				C01EEB801D6B871900BB1F51 /* AppDelegate.swift */,
 				C01EEB821D6B871900BB1F51 /* ViewController.swift */,
+				C02B65401D73A15F002F823F /* BLEService.swift */,
 				C01EEB841D6B871900BB1F51 /* Assets.xcassets */,
 				C01EEB861D6B871900BB1F51 /* Main.storyboard */,
 				C01EEB891D6B871900BB1F51 /* Info.plist */,
 				C01EEBB11D6CDE4500BB1F51 /* EventMonitor.swift */,
 				C074BE341D7345A50009002B /* DeviceTypes.plist */,
+				C02B653C1D739FDA002F823F /* HIDKeyboardService.plist */,
 				C074BE351D7345A50009002B /* HIDService.plist */,
 				C074BE361D7345A50009002B /* PnPInformationService.plist */,
+				C02B653E1D73A076002F823F /* BT.swift */,
 			);
 			path = six;
 			sourceTree = "<group>";
@@ -260,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C074BE391D7345A50009002B /* PnPInformationService.plist in Resources */,
+				C02B653D1D739FDA002F823F /* HIDKeyboardService.plist in Resources */,
 				C074BE381D7345A50009002B /* HIDService.plist in Resources */,
 				C01EEB851D6B871900BB1F51 /* Assets.xcassets in Resources */,
 				C01EEB881D6B871900BB1F51 /* Main.storyboard in Resources */,
@@ -289,11 +299,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C07D7F731D6E143B0056CBAC /* BLEPeripheralConnectivity.swift in Sources */,
+				C02B653F1D73A076002F823F /* BT.swift in Sources */,
 				C07D7F741D6E143B0056CBAC /* CBMutableService+BLEEngine.swift in Sources */,
 				C01EEBB21D6CDE4500BB1F51 /* EventMonitor.swift in Sources */,
 				C01EEB831D6B871900BB1F51 /* ViewController.swift in Sources */,
 				C07D7F751D6E143B0056CBAC /* PeripheralViewController.swift in Sources */,
 				C01EEB811D6B871900BB1F51 /* AppDelegate.swift in Sources */,
+				C02B65411D73A15F002F823F /* BLEService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
