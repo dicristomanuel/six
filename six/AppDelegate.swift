@@ -3,11 +3,10 @@ import CoreBluetooth
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDelegate {
-
   let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(NSVariableStatusItemLength)
   let menu = NSMenu()
   var eventMonitor: EventMonitor? = nil
-//  var ble = PeripheralWindowController()
+  //  var ble = PeripheralWindowController()
   var ble = BLEService()
 
   func applicationDidFinishLaunching(aNotification: NSNotification) {
@@ -16,7 +15,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
     buildMenu()
     setupEventMonitor()
     ble.start()
-}
+  }
 
   func applicationWillTerminate(aNotification: NSNotification) {}
 
@@ -47,4 +46,5 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
     }
     eventMonitor?.start()
   }
+  
 }

@@ -39,18 +39,15 @@ internal class BLEService: NSObject {
                 if ((IOBluetoothSDPServiceRecord.publishedServiceRecordWithDictionary(sdpEntries! as [NSObject : AnyObject])) != nil) {
                     var serviceRecord: IOBluetoothSDPServiceRecord
                     serviceRecord = IOBluetoothSDPServiceRecord.withSDPServiceRecordRef(serviceRecordRef)
-
                     // Preserve the RFCOMM channel assigned to this service.
                     // A header file contains the following declaration:
                     // IOBluetoothRFCOMMChannelID mServerChannelID;
                     serviceRecord.getRFCOMMChannelID(&mServerChannelID!)
-
                     // Preserve the service-record handle assigned to this
                     // service.
                     // A header file contains the following declaration:
                     // IOBluetoothSDPServiceRecordHandle mServerHandle;
                     serviceRecord.getServiceRecordHandle(&mServerHandle!)
-
                 }
 
             }
