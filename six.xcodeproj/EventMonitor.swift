@@ -10,9 +10,9 @@ public class EventMonitor {
     self.handler = handler
   }
 
-  deinit {
-    stop()
-  }
+  // deinit {
+  //   stop()
+  // }
 
   public func start() {
     monitor = NSEvent.addGlobalMonitorForEventsMatchingMask(mask, handler: handler)
