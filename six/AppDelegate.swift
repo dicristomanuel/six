@@ -7,6 +7,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
   let menu = NSMenu()
   var eventMonitor: EventMonitor? = nil
   //  var ble = PeripheralWindowController()
+  
   var ble = BLEService()
 
   func applicationDidFinishLaunching(aNotification: NSNotification) {
@@ -46,5 +47,5 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
     }
     eventMonitor?.start()
   }
-  
+
 }
