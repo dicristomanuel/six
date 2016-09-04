@@ -4,7 +4,6 @@ public class EventMonitor {
   private var monitor: AnyObject?
   private let mask: NSEventMask
   private let handler: NSEvent? -> ()
-
   public init(mask: NSEventMask, handler: NSEvent? -> ()) {
     self.mask = mask
     self.handler = handler
