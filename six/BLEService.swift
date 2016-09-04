@@ -15,7 +15,6 @@ internal class BLEService: NSObject {
         // Do any additional setup after loading the view.
         publishService()
     }
-
     func publishService() {
         // Create a string with the new service name.
         serviceName = "My New Service"
