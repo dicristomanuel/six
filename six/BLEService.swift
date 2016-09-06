@@ -15,6 +15,7 @@ internal class BLEService: NSObject {
         // Do any additional setup after loading the view.
         publishService()
     }
+
     func publishService() {
         // Create a string with the new service name.
         serviceName = "My New Service"
@@ -31,7 +32,7 @@ internal class BLEService: NSObject {
                 let serviceRecordRef: IOBluetoothSDPServiceRecordRef? = nil
                 print("serviceRecordRef >> ", IOBluetoothSDPServiceRecord().getRef())
                 sdpEntries!.setObject(serviceName!, forKey: "0100 - ServiceName*")
-
+                
                 // Create a new IOBluetoothSDPServiceRecord that includes both
                 // the attributes in the dictionary and the attributes the
                 // system assigns. Add this service record to the SDP database.
